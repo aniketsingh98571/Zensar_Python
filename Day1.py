@@ -43,3 +43,15 @@ p=6
 print(p)
 print(type(p))
 print(id(p))
+
+#datatypes
+'''
+Numbers--using umeric data-int,float,double
+String-seq. of characters
+Boolean-true/false
+collection in python:-
+List
+Set
+Dictiionary
+tuple
+'''
