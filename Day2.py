@@ -84,3 +84,126 @@ for i in range(3,10):
 
 for i in range(3,10,3): #3-->start value  10-->stop value  3-->jump to 3 and then again 3
     print(i)
+
+for i in range(2,10,1):
+    print(i)
+
+for i in range(2,10):
+    print(i)
+
+#nested for loops
+rows=int(input("Enter the rows"))
+for i in range(0,5):
+    for j in range(i):
+        print(i," ",j)
+
+#use else statement with for loop
+for i in range(0,5):
+    print(i)
+else:
+    print("For loop ended")
+
+#while loop
+print("Demo for While loop")
+i = 8
+print("Value of is ", i)
+# The while loop will iterate until condition becomes false.
+
+while(i>=1):
+    print(i)   
+    i=i-1  # decrement
+
+# Using else with while loop
+# Python allows us to use the else statement with the while loop also.
+# The else block is executed when the condition given in the while statement becomes false.
+
+i=1   
+while(i<=8):    
+    print(i)    
+    i=i+1    
+else:  
+    print("The while loop exhausted")
+
+#wap to demonstrate while loop using range function
+i=7
+while (i in range(0,10)):
+    print(i)
+    i=i+1
+print(id(i))
+
+i=7
+for i in range(0,10):
+    print(i)
+    i=i+1
+    print(id(i))
+
+#Break Statement
+str="python"
+for i in str:
+    if i=="o":
+        break
+    print(i)
+
+i=0
+while 1:
+    print(i)
+    i=i+1
+    if i==10:
+        break
+
+#continue statement
+for i in range(0,11):
+    if i==9:
+        continue
+    print(i)
+
+i=0
+while(i<10):
+    i=i+1
+    if(i==5):
+        continue
+    print(i,end="\t")
+
+#Strings-sequencce of characters enclosed in quoatation marks
+#strings are immutable[cannot be changed] 
+#strings have index and can be traversed, index starts with 0
+str1="Aniket"+"Singh"
+print(str1)
+
+str="Aniket"
+print(str)
+print(str[0])
+print(str[1])
+print(str[2])
+print(str[3])
+print(str[4])
+print(str[5])
+
+str2="Aniket Singh"
+print(str2[7])
+print(str2[6])
+
+print("Finding the character position using find function")
+str="python programming"
+print(str)
+a=str.find('p')
+print("Found at ",a)
+
+print("the find functio returns the first occuerence of the character")
+str3="welcome to python"
+c=str3.find('n')
+print("found at",c)
+
+#slicing
+#p   y  t  h  o  n
+#-6 -5 -4 -3 -2 -1
+
+#p  y  t  h  o  n
+#0  1  2  3  4  5
+str4="python programming"
+print("the character at -2 position is",str4[-2])
+
+str5="python"
+print(str5[2])
+
+
