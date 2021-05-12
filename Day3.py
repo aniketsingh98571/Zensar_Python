@@ -274,4 +274,57 @@ city1=list(city)
 print(city)
 print(list(city))
 
+print("Searching the elements using for loop in list")
+list6=[1,2,3,4,"Aniket","Singh","Web Dev"]
+for elements in list6:
+    print(elements)
+    if "Aniket" in list6:
+        print("Found")
+    else:
+        print("not found")
+
+if "Tech" in list6:
+    print("Yes")
+else:
+    print("No")
+
+#adding elements to the list using append function
+list7=[11,12,5,6]
+print("The original list is ",list7)
+list7.append(23)
+print("The modified list is ",list7)
+
+list8=["Aniket","Web Dev","Frontend"]
+print("The original list is ",list8)
+list8.append("open source")
+print("The modified list is ",list8)
+
+list9=[1,2,3,"Web Dev","Front dev"]
+print("The original list is ",list9)
+list9.append(23)
+print("The modified list is ",list9)
+
+#adding the element to a particualar position
+print("Adding the element at index position using insert() function")
+list10=[1,2,3,4,5]
+print("Original list ",list10)
+list10.insert(3,30)
+print("Modified list ",list10)
+
+#Removing the element using del
+list10=[1,2,3,4,5]
+print("Original list ",list10)
+del list10[1]
+print("modified list is ",list10)
+
+#deleting list
+del list10
+
+#remove()
+list10=[1,2,3,4,5]
+print("Original list ",list10)
+list10.remove(2) #specify the element you want to delete
+print("modified list is ",list10)
+
+
 
