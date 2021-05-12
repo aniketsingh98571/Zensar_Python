@@ -206,4 +206,3 @@ print("the character at -2 position is",str4[-2])
 str5="python"
 print(str5[2])
 
-
