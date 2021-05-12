@@ -131,3 +131,147 @@ print(str2) #-1 case
 
 str2=str.find("to")
 print(str2) #match case
+
+'''
+split function
+'''
+str="Welcome to Python"
+print("The original string is:",str)
+str2=str.split()
+print("The modified string is", str2)#it splits the string into comma separated list(of words)
+print("-----------")
+
+str="D.Y.Patil College"
+print("The string is:",str)
+num=str.split()
+print("The modified string is :",num)
+
+str="Python is a programming language"
+str2=str.split()
+print("The string is :",str)
+print("The modified string is ",str2)
+print("-----------------------------")
+str3=str.split("is")
+print(str3)
+
+str4=str.split(' ')
+print(str4)
+
+str5=str.split('a')
+print(str5)
+
+str6=str.split('g')
+print(str6)
+
+'''
+replace() method replaces all the occurrences of the substring with the given  substring
+'''
+
+str="Python is a programming language"
+print("The original string is: ",str)
+str2=str.replace("Python","java") #replace(old,new)
+print("The modified string is ",str2)
+str2=str.replace("g","$$",3) #replace(old,new,no of occurrences)
+str2=str.replace(str,"Welcome to Python")
+print(str2)
+
+#isdigit() ---If string contains numbers then it will give true and if it contain numbers with special character like "-" it will give false
+str='98765'
+print("The string is ",str)
+str2=str.isdigit()
+print(str2)
+
+str="980-25-65"
+print(str.isdigit())
+
+str="!@#12234t8&^%"
+if str.isdigit()==True:
+    print("It is digit")
+else:
+    print("It is not digit")
+
+#strip() function
+str="    Hello   World    "
+print("The modified string is ",str.strip())#removes all blank spaces from starting and end of the string
+print("------------------")
+
+print("The modifiend string is", str.rstrip())#remove all blank spaces from right of the string
+print("------------------")
+
+print("the modified string is",str.lstrip())#remove all blank spaces from left of the string
+
+#wap to replace all blank spaces with ','
+#wap to count all the occurrences of 'a' in a string
+#wap to remove a char from the string
+#
+
+
+
+
+
+
+#Lists-Heterogeneous collection of elements enclosed within a pair of square brackets separated by comma.Mutable objec
+#Index is availablle to traverse the list. slicing can also be done
+
+list1=[1,2,3,5,25] #list of numbers
+print("The list we have is ",list1)
+
+print("The element of the list is ",list1[0])
+print("The element of the list is ",list1[1])
+print("The element of the list is ",list1[2])
+print("The element of the list is ",list1[3])
+
+print("The variable type is ",type(list1))
+list2=["Nashik","khalapur","jamshedpur","kolkata"]#list of strings
+print("THe list 2 is ",list2)
+print("The type of variable is",type(list2))
+print("The element of the list is ",list2[0])
+print("The element of the list is ",list2[1])
+print("The element of the list is ",list2[2])
+print("The element of the list is ",list2[3])
+
+list3=[1,2,3,"Aniket","kolkata"]
+print("THe list 3 is ",list3)
+print("The type of variable is",type(list3))
+print("The element of the list is ",list3[0])
+print("The element of the list is ",list3[1])
+print("The element of the list is ",list3[2])
+print("The element of the list is ",list3[3])
+
+#updating list
+list4=["Punjab","Gujrat","Kashmir","Delhi"]
+print("the original list is",list4)
+print("trying to update the list")
+list4[1]="Jamanagar"
+print("The modifed list is",list4)
+
+list4=["Punjab","Gujrat","Kashmir","Delhi"]
+print("the original list is",list4)
+print("trying to update the list")
+list4[0]="Java"
+print("The modifed list is",list4)
+
+#creating a list
+print("creating the list using for loop")
+
+#generating the list using for loop
+number=[x+6 for x in [1,2,3,4,5]]
+print("The list is ",number)
+#[1+6,2+6,3+6,4+6,5+6]
+
+#creating a list using for loop and range function
+number=[x+6 for x in range(2,12)]
+print("the list is",number)
+
+#converting a string into list
+print("Converting a string into list")
+str=list("python")
+print(str)
+
+city="Nashik Pune"
+print("the string is ",city)
+city1=list(city)
+print(city)
+print(list(city))
+
+
