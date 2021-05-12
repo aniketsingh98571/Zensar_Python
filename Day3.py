@@ -326,5 +326,11 @@ print("Original list ",list10)
 list10.remove(2) #specify the element you want to delete
 print("modified list is ",list10)
 
+#removing all the occurrences of 3 from the list
+list11=[1,2,4,3,6,3,7,3,1,3,5,4,3,8,7,3]
+for i in list11:
+    if i==3:
+        list11.remove(3)
+print("The final list is",list11)
 
-
+#wap to implement remove method in for loop
