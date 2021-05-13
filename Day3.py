@@ -328,9 +328,74 @@ print("modified list is ",list10)
 
 #removing all the occurrences of 3 from the list
 list11=[1,2,4,3,6,3,7,3,1,3,5,4,3,8,7,3]
+list11.remove(3)
+print(list11) #removes only first occurence
+
 for i in list11:
     if i==3:
         list11.remove(3)
 print("The final list is",list11)
 
 #wap to implement remove method in for loop
+test=["C++","Java","Python","GO lang","Docker","Kubernetes"]
+for i in test:
+    if i=="Kubernetes":
+        test.remove("Kubernetes")
+print(test)
+
+#wap to replace all blank spaces with ','
+test="Open Source is for everyone"
+test2=test.replace(' ',',')
+print(test2)
+
+#wap a program to count all occurrences of 'e' in a string.
+test="Love to hangout on twitter with other developers"
+print(test.count('e'))
+
+#wap to remove the character from the string
+test="Open Source is pretty cool"
+test2=test.replace('e','')
+print(test2)
+
+#wap to print string is palindrome or not
+#ABCDCBA WOW --->palindrome
+str="ABCDCBA"
+str2=str[::-1]
+if str==str2:
+    print("It is palindrome string")
+else:
+    print("It is not palindrome")
+# print(str[0:])
+# print(str[::-1])
+
+#wap to find the first occurence of 'the' in the string
+str="Python the best"
+print(str.find('the'))
+
+#wap to count uppercase and lower case letters in string.
+upper_count=0
+lower_count=0
+str="Python Is The Best Language"
+for i in str:
+    if i.isupper():
+        upper_count=upper_count+1
+    elif i.islower():
+        lower_count=lower_count+1
+print("No of upper count letters are ",upper_count)
+print("No of lower count letters are ",lower_count)
+
+#wap to return all the digits from the string
+str="I scored 99 runs"
+for i in str:
+    if i.isdigit():
+        print(i)
+
+#wap to return number of letters in string
+str="hi there hju"
+count=0
+for i in str:
+    if i==" ":
+        continue
+    else:
+        count=count+1
+print("Total number of characters are ",count)
