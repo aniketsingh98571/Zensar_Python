@@ -154,3 +154,115 @@ number={1,2,3,4,5,6}
 number.update([6,7,8,9])
 print(number)
 
+print("removing the elements using the discard()")
+number={1,2,3,4,5}
+number.discard(2)
+print(number)
+
+print("removing the elements using the remove()")
+number={1,2,3,4,5}
+number.remove(2)
+print(number)
+
+#remove all the elements from set
+tup={1,2,3,4}
+tup.clear()
+print(tup)
+
+day1={"Sunday","monday","tuesday"}
+day2={"wednesday","thursday","friday"}
+print("The day1 is ",day1)
+print("day2 is here",day2)
+ #union
+print("union of day1 and day2",day1.union(day2))
+print("union of day1 and day2",day1|day2) #using pipe symbol
+
+#intersection
+day1={"Sunday","monday","tuesday","thursday"}
+day2={"wednesday","thursday","friday"}
+print("intersection between two sets is ",day1.intersection(day2))
+print("intersection between two sets is ",day1&day2)
+
+#Dictionary:collection of different elements in key value pairs enclosed in curly brackets
+print("demo for dictionary in python")
+d1={'id':101,'name':"rohan",'marks':75,'city':"pune"}
+#key:value   key/value number/string
+print("the dict  is",d1)
+d1={1:"nashik",2:"pune",3:"khalapur"}
+print("the dict is :",d1)
+d1['Nsk']=103 #adding element d1[key]=value
+d1['aug']=104
+print(d1[1]) #accessing the element using key
+print(d1[3])
+
+d2={} #empty dict
+d2[0]=101
+d2[1]=102
+print("the dict is ",d2)
+a=d2.get(1) #using get() to print the element for the key
+print("the element is ",a)
+
+#deleting the element from dict.
+print("removing the element using pop() from dict")
+print("the dict is ",d1)
+#d1.pop()  #error-atleast one argument is required
+print("the dict is ",d1)
+d1.pop(2) #key
+print("the dict is ",d1)
+d1.pop('Nsk') #removing the element using pop()
+print(d1)
+
+#delete a dictionary/clear a dictionary
+d1={"nashik":1,"pune":1,"goa":3}
+print("the dict is ",d1)
+d1.clear() #deleting all the elements from dict
+print("after clear function")
+print("the dict is ",d1)
+
+#deletes the dictionary completely
+d3={"nashik":1,"pune":1,"goa":3}
+del d3 #
+
+#iterate a dictionary
+d1={1:"nashik",2:"pune",3:"khalapur","nsk":103,"aug":105,"pun":106}
+print("printing only the keys from dict")
+for x in d1: #printing the key
+    print("the key is",x)
+
+print("***********************")
+print("printing only the values from dict")
+for x in d1: #printing the value
+    print("the value is ",d1[x])
+
+print("************************")
+print("printing the values from dict")
+for x in d1.values(): #printing the values
+    print("the value is",x)
+print("*************************")
+print("printing the keys and values using items form dict")
+for x,y in d1.items(): #printing keys and values
+    print("the key is ",x,"   the value is ",y)
+
+#length of dictionary
+d1={1:"Nashik",2:"Pune"}
+print("length is ",len(d1))
+
+#sort the dict
+d1={1:"Nashik",2:"Pune"}
+print("length is ",sorted(d1))
+
+d1={1:"Nashik",2:"Pune"}
+for x,y in d1.items(): #printing keys and values
+    if x==1:
+        print("it is present")
+#converting tuple to dictionary
+tup=((1,"one"),(2,"two"),(3,"three"))
+print("the tup is ",tup)
+print("converting a tuple to dictionary")
+print(dict(tup))
+
+#converting list to dictionary
+lst=[[1,"one"],[2,"two"]]
+print(dict(lst))
+
+#
