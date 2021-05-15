@@ -176,3 +176,74 @@ print("Area of circle is ",2*3.14*my_circle.radius)
 #4 we overwrite the radius field
 #5 radius is an instance variable of Circles instances
 
+#methods in classes
+class Circle:
+    def __init__(self): #1
+        self.radius=1  #init is nothing but a constructor
+        print("The radius is ",self.radius)
+
+    def area(self):
+         print("Inside the area function...")
+         return 2*self.radius*3.14
+print("Creating the object")
+my_circle=Circle() #2
+print("Object Created")
+print("Radius is ",my_circle.radius)
+print("Area of circle is,",my_circle.area())
+print("Area of circle is ",2*3.14*my_circle.radius)  #3
+my_circle.radius=5  #4
+print("modified radius is ",my_circle.radius)
+print("Area of circle is,",my_circle.area())
+print("Area of circle is ",2*3.14*my_circle.radius)
+
+
+#instance and class variable
+class Circle:
+    def __init__(self): #1
+        pi=3.14 #this is class variable
+        self.radius=1  #init is nothing but a constructor
+        print("The radius is ",self.radius)
+
+    def area(self):
+         print("Inside the area function...")
+         return 2*self.radius*Circle.pi #class varible uses class name to be accessible
+print("Creating the object")
+my_circle=Circle() #2
+print("Object Created")
+my_circle.pi=5 #Instance variable
+print("Radius is ",my_circle.radius)
+print("THe class variable is ",Circle.pi)
+print("The object variable is ",my_circle.pi)
+print("Area of circle is,",my_circle.area())
+print("Area of circle is ",2*3.14*my_circle.radius)  #3
+my_circle.radius=5  #4
+print("modified radius is ",my_circle.radius)
+print("Area of circle is,",my_circle.area())
+print("Area of circle is ",2*3.14*my_circle.radius)
+print("Changing the pi value")
+Circle.pi-4
+print("Modified pi value is ",Circle.pi)
+
+#Parameterized Constructor
+print("Trying to understand the parameterized constructor")
+print("Creating a class student")
+class student:
+    def __int__(self,id,name,age): #constructor with arguments
+        self.id=id
+        self.name=name
+        self.age=age
+
+    def display(self):
+        print("ID :%d\nName:%s\nAge:%d"%(self.id,self.name,self.age))
+
+print("Class created")
+print("Creating the objects")
+str1=student(101,"Rohan Mali",18) #passing value for data members
+print("Object one is created")
+str2=student(102,"Anike",21)
+print("Object 2 created")
+print("trying to call the functions for obejcts")
+print("function call for object 1")
+str1.display()
+print("function call for object 2")
+str2.display()
