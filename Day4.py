@@ -265,4 +265,40 @@ print(dict(tup))
 lst=[[1,"one"],[2,"two"]]
 print(dict(lst))
 
-#
+#create a dictionary student with student details
+stud={1:{"name":"Aniket","std":"TE","Div":"B"},2:{"name":"Somesh","std":"TE","Div":"B"},3:{"name":"Gitesh","std":"TE","div":"A"}}
+print(stud)
+
+#adding elements to student dictionary
+stud[3]["name"]="Pushkar"
+stud[3]["std"]="TE"
+stud[3]["div"]="B"
+print(stud)
+
+#delete one element from student dictionary
+del stud[3]["name"]
+print(stud)
+
+#return an element with key 2 from student dictionary
+del stud[1]
+print(stud)
+
+#print only the keys from student dictionary
+stud={1:{"name":"Aniket","std":"TE","Div":"B"},2:{"name":"Somesh","std":"TE","Div":"B"},3:{"name":"Gitesh","std":"TE","div":"A"}}
+for i in stud:
+    print(i)
+
+#print the values of dict
+for i in stud.values():
+    print(i)
+
+#Create employee dictionary
+emp={1:{"ename":"ABC","salary":-1000},2:{"ename":"PQR","salary":1000}}
+
+#print the emp dict
+print(emp)
+
+for i in emp:
+    if emp[i]["salary"]==-1000:
+        del emp[i]["salary"]
+print(emp)
