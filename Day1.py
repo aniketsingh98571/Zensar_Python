@@ -57,8 +57,8 @@ tuple
 '''
 
 #arithmatic operator:- +,-,/,**,//
-m=5
-n=6
+m=50
+n=5
 print(m)
 print(n)
 print("Addition + ",m+n)
