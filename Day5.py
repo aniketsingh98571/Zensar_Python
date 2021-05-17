@@ -247,3 +247,5 @@ print("function call for object 1")
 str1.display()
 print("function call for object 2")
 str2.display()
+
+#file handling
